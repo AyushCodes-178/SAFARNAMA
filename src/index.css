@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --color-sky-50: #e3f2fd;
+  --color-sky-100: #bbdefb;
+  --color-sky-200: #90caf9;
+  --color-sky-300: #64b5f6;
+  --color-sky-400: #42a5f5;
+  --color-sky-500: #2196f3;
+  --color-sky-600: #1e88e5;
+  --color-sky-700: #1976d2;
+  --color-sky-800: #1565c0;
+  --color-sky-900: #0d47a1;
+  --color-emerald-50: #e8f5e9;
+  --color-emerald-100: #c8e6c9;
+  --color-emerald-200: #a5d6a7;
+  --color-emerald-300: #81c784;
+  --color-emerald-400: #66bb6a;
+  --color-emerald-500: #4caf50;
+  --color-emerald-600: #43a047;
+  --color-emerald-700: #2e7d32;
+  --color-emerald-800: #1b5e20;
+  --color-emerald-900: #1b5e20;
+}
+
+/* Custom utility styles */
+@layer base {
+  body {
+    background-color: #F5F9FC;
+    color: #263238;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Leaflet map fix */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.75rem;
+  z-index: 10;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
